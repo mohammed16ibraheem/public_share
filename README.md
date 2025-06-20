@@ -12,15 +12,13 @@ A command-line interface for interacting with Valtstorage - the secure, blockcha
 
 ## Installation
 
-### Option 1: Install Globally (Recommended)
 
-```bash
-# Install globally from npm
-npm install -g valtstorage-cli
+#### 1: Install the package globally
+Since the error shows it's looking for the package in your global npm modules, you should install it globally:
 
-# Now you can use it from anywhere
-valtstorage upload a.jpg
-```
+npm install -g ./
+
+
 
 ### Option 2: Local Installation
 
@@ -38,12 +36,7 @@ npm install
 npx valtstorage upload a.jpg
 ```
 
-### Option 3: Run Without Installation
 
-```bash
-# Using npx directly
-npx valtstorage-cli upload a.jpg
-```
 
 ## Commands
 
