@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+// Suppress deprecation warnings by overriding the process.emitWarning function
+const originalEmitWarning = process.emitWarning;
+process.emitWarning = function(warning, type, code) {
+  // Filter out DEP0044 warnings about util.isArray
+  if (code === 'DEP0044') {
+    return;
+  }
+  return originalEmitWarning.apply(process, arguments);
+};
+
+// Also suppress the NODE_NO_WARNINGS flag for good measure
+process.env.NODE_NO_WARNINGS = '1';
+
+// Start the application
+require('../src/index.js');

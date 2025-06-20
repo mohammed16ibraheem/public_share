@@ -1,0 +1,63 @@
+{
+  "name": "valtstorage-cli",
+  "version": "1.1.0",
+  "description": "Command line interface for Valtstorage - secure blockchain-based file storage and sharing",
+  "main": "src/index.js",
+  "bin": {
+    "valtstorage": "./bin/valtstorage"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "start": "node ./bin/valtstorage",
+    "build": "pkg .",
+    "dev": "cross-env VALTSTORAGE_ENV=development node ./bin/valtstorage",
+    "demo": "cross-env VALTSTORAGE_ENV=demo node ./bin/valtstorage"
+  },
+  "keywords": [
+    "blockchain",
+    "storage",
+    "file-sharing",
+    "encryption",
+    "cli",
+    "security",
+    "privacy",
+    "terminal"
+  ],
+  "author": "Valtstorage Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "pkg": {
+    "targets": [
+      "node16-linux-x64",
+      "node16-macos-x64",
+      "node16-win-x64"
+    ],
+    "outputPath": "dist",
+    "assets": [
+      "node_modules/open/xdg-open"
+    ]
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "commander": "^10.0.1",
+    "figlet": "^1.8.1",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.3.0",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^8.2.5",
+    "mime-types": "^2.1.35",
+    "open": "^8.4.2",
+    "ora": "^5.4.1",
+    "terminal-kit": "^2.4.0",
+    "terminal-link": "^3.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "pkg": "^5.8.1"
+  }
+}
