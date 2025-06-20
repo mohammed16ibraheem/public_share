@@ -13,10 +13,6 @@ A command-line interface for interacting with Valtstorage - the secure, blockcha
 ## Installation
 
 
-#### 1: Install the package globally
-Since the error shows it's looking for the package in your global npm modules, you should install it globally:
-
-npm install -g ./
 
 
 
@@ -27,7 +23,8 @@ npm install -g ./
 git clone https://github.com/yourusername/valtstorage-cli.git
 
 # Navigate to the directory
-cd valtstorage-cli
+cd public_share-main
+npm install -g ./
 
 # Install dependencies
 npm install
