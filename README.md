@@ -19,7 +19,7 @@ A command-line interface for interacting with Valtstorage - the secure, blockcha
 npm install -g valtstorage-cli
 
 # Now you can use it from anywhere
-valtstorage upload myfile.pdf
+valtstorage upload a.jpg
 ```
 
 ### Option 2: Local Installation
@@ -35,14 +35,14 @@ cd valtstorage-cli
 npm install
 
 # Run with npx
-npx valtstorage upload myfile.pdf
+npx valtstorage upload a.jpg
 ```
 
 ### Option 3: Run Without Installation
 
 ```bash
 # Using npx directly
-npx valtstorage-cli upload myfile.pdf
+npx valtstorage-cli upload a.jpg
 ```
 
 ## Commands
@@ -167,7 +167,7 @@ For testing purposes, you can use the CLI in demo mode which simulates operation
 export VALTSTORAGE_ENV=demo
 
 # Now all commands will use simulated responses
-valtstorage upload myfile.pdf
+valtstorage upload a.jpg
 ```
 
 Demo mode is useful for:
